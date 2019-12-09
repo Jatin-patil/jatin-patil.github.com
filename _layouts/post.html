@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h1 class="mt-4">{{page.title}}</h1>
+<hr>
+    <p>Posted on {{page.date | date: '%B %d, %Y'}}</p>
+<hr>
+<img class="img-fluid rounded" src="https://trainingheights.net/wp-content/uploads/2018/12/CatBanner-SharePoint.jpg" alt="">
+<hr>
+
+{{ page.content | remove_first: page.excerpt }}
